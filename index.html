@@ -203,7 +203,8 @@ var CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRU6wtyANEabNXqFu
 
 // Parse CSV into array of objects
 function parseCSV(text) {
-  var lines = text.split(/?
+  var lines = text.split(/
+?
 /);
   if(lines.length < 3) return [];
   
